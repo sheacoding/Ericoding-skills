@@ -12,12 +12,6 @@
       "description": "将任何想法转换成即梦 Seedance 2.0 专业分镜提示词",
       "version": "1.0.0",
       "source": "./seedance-storyboard"
-    },
-    {
-      "name": "my-commit",
-      "description": "Git 提交助手，帮助生成规范的提交信息",
-      "version": "1.0.0",
-      "source": "./my-commit"
     }
   ]
 }
