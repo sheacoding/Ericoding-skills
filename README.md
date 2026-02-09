@@ -15,22 +15,12 @@ Seedance 2.0 是即梦（剪映）推出的强大多模态 AI 视频生成模型
 
 ## 🚀 安装方法
 
-### 通过 Marketplace 安装（推荐）
-
 ```bash
 # 1. 添加 Marketplace
 /plugin marketplace add elementsix/elementsix-skills
 
 # 2. 安装 Skill
 /plugin install seedance-storyboard@elementsix-skills
-```
-
-### 本地安装
-
-```bash
-# 克隆到 Claude Code plugins 目录
-git clone https://github.com/elementsix/elementsix-skills.git \
-  ~/.claude/plugins/seedance-storyboard
 ```
 
 ## 🎯 使用方法
