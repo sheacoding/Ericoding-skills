@@ -8,7 +8,7 @@
   },
   "plugins": [
     {
-      "name": "elementsix-skills",
+      "name": "seedance-storyboard",
       "description": "将任何想法转换成即梦 Seedance 2.0 专业分镜提示词",
       "version": "1.0.0",
       "source": "./",
