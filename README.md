@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/github/stars/elementsix/elementsix-skills?style=for-the-badge&logo=github&color=ff6b6b" alt="stars" />
   <img src="https://img.shields.io/github/forks/elementsix/elementsix-skills?style=for-the-badge&logo=github&color=4ecdc4" alt="forks" />
-  <img src="https://img.shields.io/github/license/elementsix/elementsix-skills?style=for-the-badge&color=45b7d1" alt="license" />
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge&color=45b7d1" alt="license" /></a>
 </p>
 
 将任何想法转换成即梦 Seedance 2.0 专业分镜提示词的 Claude Code Skill。
