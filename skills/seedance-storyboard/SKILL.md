@@ -44,58 +44,209 @@ disable-model-invocation: false
 
 ---
 
-## 分步引导流程
+## 交互模式：Plan Mode 选项确认
 
-### 第一步：理解用户想法
+**核心原则**：使用 `AskUserQuestion` 工具，通过结构化选项快速收集需求，避免自由文本输入的歧义。
 
-用友好的方式询问用户：
-1. **你想讲什么故事？**（一句话概括核心内容）
-2. **视频时长？**（4-15秒，默认15秒）
-3. **参考素材情况？**（有无可用的图片/视频/音频参考）
+### 第一步：品类速选（必选）
 
-### 第一点五步：品类速选引导
+**CRITICAL**: 必须使用 `AskUserQuestion` 工具，让用户选择视频品类。
 
-根据用户想法，帮助快速定位最适合的品类：
+```javascript
+AskUserQuestion({
+  questions: [
+    {
+      question: "你想制作什么类型的视频？",
+      header: "品类选择",
+      multiSelect: false,
+      options: [
+        {
+          label: "AI漫剧",
+          description: "图片驱动的动画短剧，如仙侠变身、魔法爆发、高燃战斗"
+        },
+        {
+          label: "真人短剧",
+          description: "角色照片驱动的剧情演绎，如年夜饭、拜年、搞笑段子"
+        },
+        {
+          label: "产品广告",
+          description: "商品展示与品牌传播"
+        },
+        {
+          label: "互动接龙",
+          description: "社交裂变内容，如成语接龙、加一字、突击检查"
+        }
+      ]
+    }
+  ]
+})
+```
 
-#### 剧情类
-- **AI漫剧**：图片驱动的动画短剧（仙侠变身、魔法爆发、高燃战斗）
-- **真人感短剧**：角色照片驱动的剧情演绎（年夜饭、拜年、搞笑段子）
-- **视频续写**：多集连续剧情（系列故事、接龙）
+**品类完整列表**（根据用户选择"其他"时展示）：
 
-#### 模仿类
-- **舞蹈模仿**：参考视频复刻舞蹈（翻跳、卡点舞蹈）
-- **酷炫运镜**：镜头技术 showcase（希区柯克变焦、一镜到底穿越）
+| 大类 | 品类 | 适用场景 |
+|------|------|---------|
+| **剧情类** | AI漫剧 | 仙侠变身、魔法爆发、高燃战斗 |
+| | 真人短剧 | 年夜饭、拜年、搞笑段子 |
+| | 视频续写 | 系列故事、多集接龙 |
+| **模仿类** | 舞蹈模仿 | 翻跳、卡点舞蹈 |
+| | 酷炫运镜 | 希区柯克变焦、一镜到底穿越 |
+| **商业类** | 产品广告 | 商品展示与品牌传播 |
+| | AI MV | 歌曲配画面、音乐卡点 |
+| **知识类** | 科普动画 | 科学原理、历史故事 |
+| | AI Vlog | 旅行、日常记录 |
+| **社交类** | 互动接龙 | 评论区裂变、系列连续 |
+| **编辑类** | P视频 | 换装、去水印、换背景 |
 
-#### 商业类
-- **产品广告**：商品展示与品牌传播
-- **AI MV**：音乐视频（歌曲配画面、音乐卡点）
+### 第二步：核心参数配置（基于品类自动推荐）
 
-#### 知识类
-- **科普动画**：知识可视化（科学原理、历史故事）
-- **AI Vlog**：第一人称叙事（旅行、日常记录）
+**CRITICAL**: 根据第一步选择的品类，使用 `AskUserQuestion` 收集核心参数。
 
-#### 社交类
-- **互动接龙**：社交裂变内容（成语接龙、加一字、突击检查）
+#### 通用参数（所有品类）
 
-#### 编辑类
-- **P视频**：视频局部编辑（换装、去水印、换背景）
+```javascript
+AskUserQuestion({
+  questions: [
+    {
+      question: "视频时长？",
+      header: "时长",
+      multiSelect: false,
+      options: [
+        { label: "15秒（推荐）", description: "最完整的叙事结构" },
+        { label: "10秒", description: "快节奏展示" },
+        { label: "6秒", description: "极简创意" }
+      ]
+    },
+    {
+      question: "画面比例？",
+      header: "比例",
+      multiSelect: false,
+      options: [
+        { label: "9:16 竖屏", description: "抖音、快手等短视频平台" },
+        { label: "16:9 横屏", description: "YouTube、B站等长视频平台" },
+        { label: "2.35:1 电影宽屏", description: "电影级质感" }
+      ]
+    },
+    {
+      question: "整体视觉风格？",
+      header: "风格",
+      multiSelect: false,
+      options: [
+        { label: "电影级写实", description: "逼真的光影、物理效果" },
+        { label: "CG动画", description: "皮克斯/迪士尼风格" },
+        { label: "中国水墨", description: "武侠、禅意" },
+        { label: "赛博朋克", description: "未来科幻、霓虹城市" }
+      ]
+    }
+  ]
+})
+```
 
-💡 **提示**：不同品类有不同的最佳实践和提示词技法，选对品类事半功倍！
+#### 品类专属参数
 
-### 第二步：深入挖掘细节
+**AI漫剧专属**：
+```javascript
+AskUserQuestion({
+  questions: [
+    {
+      question: "是否需要首尾帧变身效果？",
+      header: "变身特效",
+      multiSelect: false,
+      options: [
+        { label: "是（推荐）", description: "从A形态变为B形态，如红衣剑客→凤凰战神" },
+        { label: "否", description: "单一形态展示" }
+      ]
+    },
+    {
+      question: "色调风格？",
+      header: "色调",
+      multiSelect: false,
+      options: [
+        { label: "金红暖色调", description: "热血、激昂、战斗" },
+        { label: "紫黑冷色调", description: "神秘、暗黑、魔法" },
+        { label: "暖冷色调剧烈反差", description: "冲突、对抗、反转" }
+      ]
+    }
+  ]
+})
+```
 
-根据用户的初步回答，逐步引导完善以下维度：
+**真人短剧专属**：
+```javascript
+AskUserQuestion({
+  questions: [
+    {
+      question: "剧情基调？",
+      header: "基调",
+      multiSelect: false,
+      options: [
+        { label: "温馨感人", description: "家庭、亲情、友情" },
+        { label: "搞笑幽默", description: "段子、反转、梗" },
+        { label: "悬疑紧张", description: "谜题、推理、惊悚" }
+      ]
+    }
+  ]
+})
+```
 
-#### 1. 内容叙事
-- 故事的起承转合是什么？
-- 关键情节有哪些？
-- 需要哪些角色/主体？
-- 对白/旁白内容？
+**产品广告专属**：
+```javascript
+AskUserQuestion({
+  questions: [
+    {
+      question: "广告节奏？",
+      header: "节奏",
+      multiSelect: false,
+      options: [
+        { label: "快节奏切换", description: "多角度快速展示产品" },
+        { label: "舒缓展示", description: "细节特写、氛围营造" },
+        { label: "音乐卡点", description: "配合音乐节奏切换" }
+      ]
+    }
+  ]
+})
+```
 
-#### 2. 视觉风格
-- 整体风格：写实/动画/水墨/科幻/复古/电影感？
-- 色调氛围：明亮/昏暗/暖色/冷色/黑白？
-- 画面比例：竖屏(9:16)/横屏(16:9)/电影宽屏(2.35:1)？
+**互动接龙专属**：
+```javascript
+AskUserQuestion({
+  questions: [
+    {
+      question: "这是系列视频的第几集？",
+      header: "集数",
+      multiSelect: false,
+      options: [
+        { label: "第一集", description: "建立规则、示范、抛出问题" },
+        { label: "后续集", description: "承接上集、新内容、再次引导" }
+      ]
+    }
+  ]
+})
+```
+
+### 第三步：素材情况确认
+
+**CRITICAL**: 使用 `AskUserQuestion` 确认用户是否有参考素材。
+
+```javascript
+AskUserQuestion({
+  questions: [
+    {
+      question: "你有哪些参考素材？（可多选）",
+      header: "素材",
+      multiSelect: true,
+      options: [
+        { label: "角色/场景参考图", description: "用于形象一致性、场景风格参考" },
+        { label: "运镜/动作参考视频", description: "复刻镜头语言、动作节奏" },
+        { label: "音乐/音效", description: "配乐、对白参考" },
+        { label: "无素材", description: "纯文本描述生成" }
+      ]
+    }
+  ]
+})
+```
+
+### 第四步：内容细节收集
 
 #### 3. 镜头语言
 - 景别变化：远景→全景→中景→近景→特写？
