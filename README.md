@@ -1,46 +1,77 @@
-# 🎬 Seedance Storyboard - ElementSix Skills
+# 🎬 Seedance Storyboard - Ericoding Skills
 
 <p align="center">
-  <img src="https://img.shields.io/github/stars/elementsix/elementsix-skills?logo=github&logoColor=white&labelColor=333&color=ffb700&style=for-the-badge" alt="stars" />
+  <img src="https://img.shields.io/github/stars/sheacoding/Ericoding-skills?logo=github&logoColor=white&labelColor=333&color=ffb700&style=for-the-badge" alt="stars" />
   &nbsp;
-  <img src="https://img.shields.io/github/forks/elementsix/elementsix-skills?logo=github&logoColor=white&labelColor=333&color=3498db&style=for-the-badge" alt="forks" />
+  <img src="https://img.shields.io/github/forks/sheacoding/Ericoding-skills?logo=github&logoColor=white&labelColor=333&color=3498db&style=for-the-badge" alt="forks" />
   &nbsp;
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-2ecc71?style=for-the-badge&labelColor=333&logo=open-source-initiative&logoColor=white" alt="license" /></a>
   &nbsp;
-  <img src="https://img.shields.io/badge/Version-1.1.0-blue?style=for-the-badge&labelColor=333" alt="version" />
+  <img src="https://img.shields.io/badge/Version-1.2.0-blue?style=for-the-badge&labelColor=333" alt="version" />
 </p>
 
 <p align="center">
   <b>将任何想法转换成即梦 Seedance 2.0 专业分镜提示词的 Claude Code Skill</b>
+  <br/>
+  <sub>整合字节跳动官方实测案例 | 11个品类覆盖 | 8大高阶技法 | 实战级提示词生成</sub>
 </p>
+
+---
+
+> **Fork 说明**
+> 本项目基于 [elementsix/elementsix-skills](https://github.com/elementsix/elementsix-skills) v1.1.0 深度强化开发
+> 核心增强：整合《小云雀 x Seedance2.0 实测案例》官方达人手册，提升提示词质量至字节跳动内部水准
+
+---
 
 ## 📖 简介
 
 Seedance 2.0 是即梦（剪映）推出的强大多模态 AI 视频生成模型，但写出好的提示词对普通人来说很困难。这个 Skill 通过一步步引导，帮你把简单的想法转换成专业的分镜提示词。
+
+**v1.2.0 核心升级**：整合字节跳动官方达人实操手册，新增 AI 漫剧、真人短剧、互动接龙等 5 大品类专项技法，提示词质量直逼官方案例水准。
 
 ## ✨ 功能特点
 
 ### 🎯 核心能力
 - ✅ **分步引导** - 从想法到完整提示词的完整流程
 - ✅ **覆盖全能力** - 支持 Seedance 2.0 所有功能（多模态、延长、编辑等）
-- ✅ **专业模板** - 内置 6 套分镜模板
+- ✅ **专业模板** - 内置 10 套分镜模板（v1.2.0 新增 4 套）
 - ✅ **中文优化** - 专门针对中文用户设计
 
-### 🚀 v1.1.0 新增功能
-- 🔥 **视频延长** - 在已有视频基础上"接着拍"，平滑衔接
-- 🔥 **复杂运镜** - 希区柯克变焦、环绕跟拍、一镜到底精准复刻
-- 🔥 **特效复刻** - 变装特效、粒子特效、拼图转场等创意效果
-- 🔥 **角色一致性** - 保持人物形象的连续叙事能力
-- 🔥 **多场景融合** - 无缝转场、空间转换自由创作
+### 🚀 v1.2.0 新增功能（重磅升级）
+- 🔥 **品类速选引导** - 11 个品类快速定位（AI漫剧、真人短剧、互动接龙等）
+- 🔥 **四段式运镜公式** - AI 漫剧高频模式，可直接套用
+- 🔥 **首尾帧变身技法** - 15 秒变身镜头专业结构
+- 🔥 **特效词库** - 30+ 专业术语（能量/元素/光效/材质）
+- 🔥 **对白嵌入技法** - 台词融入时间轴，驱动剧情节奏
+- 🔥 **逐拍声音设计** - 每个时间段独立音效描述
+- 🔥 **P视频编辑指令** - 换装/去水印/换背景/局部修改
+- 🔥 **互动接龙策划** - 多集连续 + 社交裂变结构
+
+### 📊 v1.2.0 增量对比
+| 维度 | v1.1.0 | v1.2.0 | 提升 |
+|------|--------|--------|------|
+| **品类覆盖** | 6 个基础品类 | 11 个专业品类 | +83% |
+| **提示词技法** | 基础语法 | 8 大高阶技法 | 实战级跃升 |
+| **示例案例** | 10 个 | 16 个 | +60% |
+| **模板数量** | 6 套 | 10 套 | +67% |
+| **特效词库** | 无 | 30+ 专业术语 | 从 0 到 1 |
+
+### 🎯 v1.1.0 功能（继承自基础版）
+- ✅ **视频延长** - 在已有视频基础上"接着拍"，平滑衔接
+- ✅ **复杂运镜** - 希区柯克变焦、环绕跟拍、一镜到底精准复刻
+- ✅ **特效复刻** - 变装特效、粒子特效、拼图转场等创意效果
+- ✅ **角色一致性** - 保持人物形象的连续叙事能力
+- ✅ **多场景融合** - 无缝转场、空间转换自由创作
 
 ## 🚀 安装方法
 
 ```bash
-# 1. 添加 Marketplace
-/plugin marketplace add elementsix/elementsix-skills
+# 1. 添加 Ericoding Marketplace
+/plugin marketplace add sheacoding/Ericoding-skills
 
 # 2. 安装 Skill
-/plugin install seedance-storyboard@elementsix-skills
+/plugin install seedance-storyboard@ericoding-skills
 ```
 
 ## 🔄 更新技能
@@ -49,12 +80,25 @@ Seedance 2.0 是即梦（剪映）推出的强大多模态 AI 视频生成模型
 
 1. 在 Claude Code 中运行 `/plugin`
 2. 切换到 **Marketplaces** 标签页（使用方向键或 Tab）
-3. 选择 `elementsix-skills`
+3. 选择 `ericoding-skills`
 4. 选择 **Update marketplace**
 
 也可以选择 **Enable auto-update** 启用自动更新，每次启动时自动获取最新版本。
 
-![更新技能步骤](assets/update-skill.png)
+### 从原版迁移
+
+如果你之前安装了 elementsix 版本，建议迁移到 Ericoding 增强版：
+
+```bash
+# 1. 卸载旧版本
+/plugin uninstall seedance-storyboard
+
+# 2. 添加新 Marketplace
+/plugin marketplace add sheacoding/Ericoding-skills
+
+# 3. 安装新版本
+/plugin install seedance-storyboard@ericoding-skills
+```
 
 ## 🎯 使用方法
 
@@ -131,19 +175,19 @@ Seedance 2.0 是即梦（剪映）推出的强大多模态 AI 视频生成模型
 ## 📁 文件结构
 
 ```
-elementsix-skills/
+Ericoding-skills/
 ├── .claude-plugin/
 │   └── marketplace.json              # Marketplace 配置
 ├── README.md                         # 本文件
 └── skills/
     └── seedance-storyboard/          # 主 Skill 目录
-        ├── SKILL.md                  # Skill 核心逻辑
+        ├── SKILL.md                  # Skill 核心逻辑（v1.2.0 大幅增强）
         ├── README.md                 # Skill 详细说明
-        ├── quick-reference.md        # 快速参考卡片
+        ├── quick-reference.md        # 快速参考卡片（v1.2.0 新增高阶技法）
         ├── templates/
-        │   └── storyboard-template.md    # 6套分镜模板
+        │   └── storyboard-template.md    # 10套分镜模板（v1.2.0 新增4套）
         └── examples/
-            └── example-prompts.md        # 10个完整示例
+            └── example-prompts.md        # 16个完整示例（v1.2.0 新增6个）
 ```
 
 ## 🎬 Seedance 2.0 核心能力
@@ -217,6 +261,11 @@ elementsix-skills/
 
 欢迎提交 Issue 和 PR！
 
+### 致谢
+
+- 基础版本 fork 自 [elementsix/elementsix-skills](https://github.com/elementsix/elementsix-skills) v1.1.0
+- 实测案例来源：字节跳动《小云雀 x Seedance2.0 实测案例》官方达人手册
+
 ## 📄 许可证
 
 MIT License
@@ -226,7 +275,7 @@ MIT License
 ## ⭐ Star History
 
 <p align="center">
-  <a href="https://star-history.com/#elementsix/elementsix-skills&Date">
-    <img src="https://api.star-history.com/svg?repos=elementsix/elementsix-skills&type=Date" alt="Star History" width="800" />
+  <a href="https://star-history.com/#sheacoding/Ericoding-skills&Date">
+    <img src="https://api.star-history.com/svg?repos=sheacoding/Ericoding-skills&type=Date" alt="Star History" width="800" />
   </a>
 </p>

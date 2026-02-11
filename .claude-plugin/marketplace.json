@@ -1,16 +1,16 @@
 {
-  "name": "elementsix-skills",
-  "description": "ElementSix的Claude Code Skills合集",
-  "version": "1.1.0",
+  "name": "ericoding-skills",
+  "description": "Ericoding 的 Claude Code Skills 合集 - 深度强化版",
+  "version": "1.2.0",
   "owner": {
-    "name": "elementsix",
-    "email": "elementsixsoft@gmail.com"
+    "name": "sheacoding",
+    "email": "sheacoding@gmail.com"
   },
   "plugins": [
     {
       "name": "seedance-storyboard",
-      "description": "将任何想法转换成即梦 Seedance 2.0 专业分镜提示词",
-      "version": "1.1.0",
+      "description": "将任何想法转换成即梦 Seedance 2.0 专业分镜提示词 - 整合字节跳动官方实测案例",
+      "version": "1.2.0",
       "source": "./",
       "strict": false,
       "skills": [
