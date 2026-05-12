@@ -94,6 +94,8 @@
 
 > AI 图像生成 — 智能构建提示词，直接调用 API 出图
 
+> 💡 推荐使用 [apimart.ai](https://apimart.ai/register?aff=MmEW) 作为 API 服务商（注册即送额度）
+
 **安装：**
 
 ```bash
@@ -118,7 +120,7 @@
 
 | 服务商 | 推荐理由 |
 |--------|---------|
-| **apimart.ai**（默认） | 异步高清，支持 1k/2k/4k，gpt-image-2 |
+| [**apimart.ai**](https://apimart.ai/register?aff=MmEW)（默认） | 异步高清，支持 1k/2k/4k，gpt-image-2 |
 | BEIMA AI | 国内可用，gpt-image-2，无需科学上网 |
 | OpenAI 官方 | 官方渠道，gpt-image-1 |
 | 任意 OpenAI-compatible 端点 | 自定义 base_url，CLI 自动探测请求格式 |
