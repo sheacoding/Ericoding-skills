@@ -94,8 +94,15 @@ skills/ima2gen/
     ├── anime.md              # 动漫/插画模板
     ├── photography.md        # 摄影风格模板
     ├── ui.md                 # UI/界面模板
-    └── technical.md          # 技术图表模板
+    ├── technical.md          # 技术图表模板
+    └── cn_social_poster.md   # 中文社交媒体视觉海报模板
 ```
+
+## 模板来源致谢
+
+| 模板 | 来源 |
+|------|------|
+| `cn_social_poster.md` 中文社交媒体视觉海报 | [@iswangwenbin](https://x.com/iswangwenbin/status/2054008842321858747) |
 
 ## 凭证配置
 
