@@ -81,7 +81,14 @@ SKILL.md 中使用 `AskUserQuestion` 工具做结构化引导（Plan Mode 选项
 
 - **CLI 位置**：`skills/ima2gen/cli/ima2gen.py`，首次使用时 Claude 将其复制到 `~/.config/ima2gen/ima2gen.py`
 - **凭证存储**：`~/.config/ima2gen/config.json`（api_key + base_url + model）
-- **API 兼容性**：任意 OpenAI-compatible 端点（默认推荐 BEIMA AI：`https://bmai.kun8.vip/v1`）
-- **CLI 命令**：`setup`（配置向导）/ `generate`（生成图片）/ `check`（检查配置）
+- **平台适配**：`PROVIDER_REGISTRY` 注册表按 hostname 匹配已知平台，未知平台首次请求自动探测并缓存模式
+- **CLI 命令**：`setup`（配置向导）/ `generate`（生成图片）/ `check`（检查配置及平台模式）
 - **提示词构建**：Claude 读取 `skills/ima2gen/templates/` 中对应类别模板，构建英文提示词后确认再执行
-- **Response 处理**：自动检测 b64_json / url 两种格式，兼容不同服务商
+- **Response 处理**：同步（b64_json/url 直接返回）和异步（task_id 轮询）双模式自动路由
+
+### 已验证平台（2025-05-12）
+
+| 平台 | base_url | 模式 | 验证结果 |
+|------|----------|------|---------|
+| apimart.ai | `https://api.apimart.ai/v1` | async | ✅ 1152×2048 PNG，~45s |
+| BEIMA AI | `https://bmai.kun8.vip/v1` | sync | ✅ 1024×1024 PNG，即时返回 |
