@@ -26,7 +26,7 @@
 
 # 2. 安装你需要的 Skill
 /plugin install seedance-storyboard@ericoding-skills
-/plugin install ima2gen@ericoding-skills
+/plugin install imagegen@ericoding-skills
 ```
 
 ## Skills 列表
@@ -99,7 +99,7 @@
 **安装：**
 
 ```bash
-/plugin install ima2gen@ericoding-skills
+/plugin install imagegen@ericoding-skills
 ```
 
 **使用：**

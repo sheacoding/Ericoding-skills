@@ -18,8 +18,8 @@
       ]
     },
     {
-      "name": "ima2gen",
-      "description": "AI 图像生成 Skill - 智能提示词构建 + OpenAI-compatible API 调用（支持 BEIMA AI / OpenAI 官方 / 第三方代理）",
+      "name": "imagegen",
+      "description": "AI 图像生成 Skill - 智能提示词构建 + OpenAI-compatible API 调用（支持 apimart.ai / BEIMA AI / OpenAI 官方 / 第三方代理）",
       "version": "1.0.0",
       "source": "./",
       "strict": false,
