@@ -10,22 +10,20 @@
     {
       "name": "seedance-storyboard",
       "description": "将任何想法转换成即梦 Seedance 2.0 专业分镜提示词 - 整合字节跳动官方实测案例",
-      "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/sheacoding/Ericoding-skills.git",
-        "path": "skills/seedance-storyboard",
-        "ref": "main"
-      }
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/seedance-storyboard"
+      ]
     },
     {
       "name": "imagegen",
       "description": "AI 图像生成 Skill - 智能提示词构建 + OpenAI-compatible API 调用（支持 apimart.ai / BEIMA AI / OpenAI 官方 / 第三方代理）",
-      "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/sheacoding/Ericoding-skills.git",
-        "path": "skills/ima2gen",
-        "ref": "main"
-      }
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/ima2gen"
+      ]
     }
   ]
 }
