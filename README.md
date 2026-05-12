@@ -118,9 +118,10 @@
 
 | 服务商 | 推荐理由 |
 |--------|---------|
-| **BEIMA AI**（默认） | 国内可用，gpt-image-2，无需科学上网 |
+| **apimart.ai**（默认） | 异步高清，支持 1k/2k/4k，gpt-image-2 |
+| BEIMA AI | 国内可用，gpt-image-2，无需科学上网 |
 | OpenAI 官方 | 官方渠道，gpt-image-1 |
-| 任意 OpenAI-compatible 端点 | 自定义 base_url，兼容各类代理 |
+| 任意 OpenAI-compatible 端点 | 自定义 base_url，CLI 自动探测请求格式 |
 
 **支持的图像类别：**
 
