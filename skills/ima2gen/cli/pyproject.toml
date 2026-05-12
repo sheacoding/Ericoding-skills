@@ -1,0 +1,13 @@
+[project]
+name = "ima2gen"
+version = "1.0.0"
+description = "AI image generation CLI for ima2gen skill"
+requires-python = ">=3.8"
+dependencies = [
+    "click>=8.0.0",
+    "rich>=13.0.0",
+    "requests>=2.28.0",
+]
+
+[project.scripts]
+ima2gen = "ima2gen:cli"

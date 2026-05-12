@@ -1,4 +1,4 @@
-# 🎬 Seedance Storyboard - Ericoding Skills
+# Ericoding Skills — Claude Code Skills Marketplace
 
 <p align="center">
   <img src="https://img.shields.io/github/stars/sheacoding/Ericoding-skills?logo=github&logoColor=white&labelColor=333&color=ffb700&style=for-the-badge" alt="stars" />
@@ -7,266 +7,175 @@
   &nbsp;
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-2ecc71?style=for-the-badge&labelColor=333&logo=open-source-initiative&logoColor=white" alt="license" /></a>
   &nbsp;
-  <img src="https://img.shields.io/badge/Version-1.2.0-blue?style=for-the-badge&labelColor=333" alt="version" />
+  <img src="https://img.shields.io/badge/Version-1.3.0-blue?style=for-the-badge&labelColor=333" alt="version" />
 </p>
 
 <p align="center">
-  <b>将任何想法转换成即梦 Seedance 2.0 专业分镜提示词的 Claude Code Skill</b>
+  <b>Eric 的 Claude Code Skills 合集 — 持续更新的 AI 工作流增强工具包</b>
   <br/>
-  <sub>整合字节跳动官方实测案例 | 11个品类覆盖 | 8大高阶技法 | 实战级提示词生成</sub>
+  <sub>视频分镜提示词 | AI 图像生成 | 更多 Skills 持续开发中</sub>
 </p>
 
 ---
 
-> **Fork 说明**
-> 本项目基于 [elementsix/elementsix-skills](https://github.com/elementsix/elementsix-skills) v1.1.0 深度强化开发
-> 核心增强：整合《小云雀 x Seedance2.0 实测案例》官方达人手册，提升提示词质量至字节跳动内部水准
+## 快速开始
+
+```bash
+# 1. 添加 Ericoding Marketplace（一次性操作）
+/plugin marketplace add sheacoding/Ericoding-skills
+
+# 2. 安装你需要的 Skill
+/plugin install seedance-storyboard@ericoding-skills
+/plugin install ima2gen@ericoding-skills
+```
+
+## Skills 列表
+
+| Skill | 命令 | 用途 | 版本 |
+|-------|------|------|------|
+| [seedance-storyboard](#-seedance-storyboard) | `/seedance-storyboard` | 即梦 Seedance 2.0 专业分镜提示词生成 | v1.2.0 |
+| [ima2gen](#-ima2gen) | `/ima2gen` | AI 图像生成 — 智能提示词 + API 直接出图 | v1.0.0 |
 
 ---
 
-## 📖 简介
-
-Seedance 2.0 是即梦（剪映）推出的强大多模态 AI 视频生成模型，但写出好的提示词对普通人来说很困难。这个 Skill 通过一步步引导，帮你把简单的想法转换成专业的分镜提示词。
-
-**v1.2.0 核心升级**：整合字节跳动官方达人实操手册，新增 AI 漫剧、真人短剧、互动接龙等 5 大品类专项技法，提示词质量直逼官方案例水准。
-
-## ✨ 功能特点
-
-### 🎯 核心能力
-- ✅ **分步引导** - 从想法到完整提示词的完整流程
-- ✅ **覆盖全能力** - 支持 Seedance 2.0 所有功能（多模态、延长、编辑等）
-- ✅ **专业模板** - 内置 10 套分镜模板（v1.2.0 新增 4 套）
-- ✅ **中文优化** - 专门针对中文用户设计
-
-### 🚀 v1.2.0 新增功能（重磅升级）
-- 🔥 **品类速选引导** - 11 个品类快速定位（AI漫剧、真人短剧、互动接龙等）
-- 🔥 **四段式运镜公式** - AI 漫剧高频模式，可直接套用
-- 🔥 **首尾帧变身技法** - 15 秒变身镜头专业结构
-- 🔥 **特效词库** - 30+ 专业术语（能量/元素/光效/材质）
-- 🔥 **对白嵌入技法** - 台词融入时间轴，驱动剧情节奏
-- 🔥 **逐拍声音设计** - 每个时间段独立音效描述
-- 🔥 **P视频编辑指令** - 换装/去水印/换背景/局部修改
-- 🔥 **互动接龙策划** - 多集连续 + 社交裂变结构
-
-### 📊 v1.2.0 增量对比
-| 维度 | v1.1.0 | v1.2.0 | 提升 |
-|------|--------|--------|------|
-| **品类覆盖** | 6 个基础品类 | 11 个专业品类 | +83% |
-| **提示词技法** | 基础语法 | 8 大高阶技法 | 实战级跃升 |
-| **示例案例** | 10 个 | 16 个 | +60% |
-| **模板数量** | 6 套 | 10 套 | +67% |
-| **特效词库** | 无 | 30+ 专业术语 | 从 0 到 1 |
-
-### 🎯 v1.1.0 功能（继承自基础版）
-- ✅ **视频延长** - 在已有视频基础上"接着拍"，平滑衔接
-- ✅ **复杂运镜** - 希区柯克变焦、环绕跟拍、一镜到底精准复刻
-- ✅ **特效复刻** - 变装特效、粒子特效、拼图转场等创意效果
-- ✅ **角色一致性** - 保持人物形象的连续叙事能力
-- ✅ **多场景融合** - 无缝转场、空间转换自由创作
-
-## 🚀 安装方法
+## 更新 Skills
 
 ```bash
-# 1. 添加 Ericoding Marketplace
-/plugin marketplace add sheacoding/Ericoding-skills
+# 在 Claude Code 中运行 /plugin
+# → Marketplaces 标签页 → ericoding-skills → Update marketplace
+```
 
-# 2. 安装 Skill
+也可开启 **Enable auto-update**，每次启动自动获取最新版本。
+
+---
+
+## 🎬 seedance-storyboard
+
+> 将任何想法转换成即梦 Seedance 2.0 专业分镜提示词
+
+**安装：**
+
+```bash
 /plugin install seedance-storyboard@ericoding-skills
 ```
 
-## 🔄 更新技能
-
-将 Skill 更新到最新版本：
-
-1. 在 Claude Code 中运行 `/plugin`
-2. 切换到 **Marketplaces** 标签页（使用方向键或 Tab）
-3. 选择 `ericoding-skills`
-4. 选择 **Update marketplace**
-
-也可以选择 **Enable auto-update** 启用自动更新，每次启动时自动获取最新版本。
-
-### 从原版迁移
-
-如果你之前安装了 elementsix 版本，建议迁移到 Ericoding 增强版：
-
-```bash
-# 1. 卸载旧版本
-/plugin uninstall seedance-storyboard
-
-# 2. 添加新 Marketplace
-/plugin marketplace add sheacoding/Ericoding-skills
-
-# 3. 安装新版本
-/plugin install seedance-storyboard@ericoding-skills
-```
-
-## 🎯 使用方法
-
-安装后，输入以下命令使用：
+**使用：**
 
 ```bash
 /seedance-storyboard
 ```
 
-然后 Claude 会一步步引导你：
+**核心能力：**
+- 11 个视频品类快速定位（AI漫剧、真人短剧、产品广告、互动接龙等）
+- 8 大高阶技法：四段式运镜公式、首尾帧变身、色调宣言、嵌入式对白
+- 多模态语法支持（`@图片1`/`@视频1` 引用素材）
+- 提示词硬性控制 ≤ 1000 字（平台截断限制）
 
-1. **理解想法** - 你想讲什么故事？
-2. **深入挖掘** - 风格、镜头、动作、声音
-3. **构建分镜** - 按时间轴拆解镜头
-4. **生成提示词** - 输出可直接使用的专业提示词
-5. **优化建议** - 提供改进和多模态素材建议
+**示例：**
 
-## 💡 实战示例
-
-### 示例 1：古风舞蹈
-
-**你的想法**："一个女孩在樱花树下跳舞"
-
-**生成的提示词**：
 ```
+你的想法：一个女孩在樱花树下跳舞
+
+生成的提示词：
 电影级写实风格，15秒，16:9宽屏，日落黄金时刻的温暖氛围
 
 0-3秒：远景缓慢推近，海平线夕阳，女孩剪影站在沙滩上，裙摆被海风吹动
 3-7秒：中景环绕镜头，女孩开始旋转起舞，长发和裙摆飞扬，夕阳逆光形成轮廓光
-7-11秒：近景跟随移动，女孩面向镜头舞动，表情自由愉悦，海浪轻拍沙滩作为背景
-11-13秒：特写手部动作，手指划过夕阳，光影在指尖流转
-13-15秒：远景拉远，女孩在落日余晖中定格，画面渐暗
-
-背景音效：海浪声 + 轻柔的钢琴配乐
+...
 ```
 
-### 示例 2：希区柯克变焦（v1.1.0 新增）
+**更多示例** → [`skills/seedance-storyboard/README.md`](skills/seedance-storyboard/README.md)
 
-**素材**：@图片1(男人形象)、@图片2(电梯场景)、@视频1(参考运镜)
+> **Fork 说明**：本 skill 基于 [elementsix/elementsix-skills](https://github.com/elementsix/elementsix-skills) v1.1.0 深度强化，整合字节跳动《小云雀 x Seedance2.0 实测案例》官方达人手册。
 
-**提示词**：
-```
-参考@图片1的男人形象，他在@图片2的电梯中，完全参考@视频1的所有运镜效果
-还有主角的面部表情，主角在惊恐时希区柯克变焦，然后几个环绕镜头展示电梯内视角
-电梯门打开，跟随镜头走出电梯，男人环顾四周
-```
+---
 
-### 示例 3：视频延长创作（v1.1.0 新增）
+## 🖼️ ima2gen
 
-**素材**：@视频1(原视频)、@图片1-2(角色参考)
+> AI 图像生成 — 智能构建提示词，直接调用 API 出图
 
-**提示词**：
-```
-延长15s视频，参考@图片1、@图片2的驴骑摩托车的形象
-画面1：侧面固定镜头，驴骑着摩托车冲出棚栏，旁边的鸡受到惊吓
-画面2：驴骑着摩托在沙地盘旋，俯拍盘旋特技，掀起烟雾
-画面3：背景雪山，驴骑着车从山坡飞越过
-广告语"Inspire Creativity, Enrich Life"通过遮罩形式出现
+**安装：**
+
+```bash
+/plugin install ima2gen@ericoding-skills
 ```
 
-### 示例 4：变装特效（v1.1.0 新增）
+**使用：**
 
-**素材**：@视频1(参考特效)、@图片1(首帧人物)、@图片2(最终形象)
-
-**提示词**：
-```
-将@视频1的首帧人物替换成@图片1，完全参考@视频1的特效和动作
-手里的花蕊长出玫瑰花瓣，裂纹在脸部向上延伸，逐渐被杂草覆盖
-人物双手拂过脸部，杂草变成粒子消散，最后变成@图片2的长相
+```bash
+/ima2gen
 ```
 
-**更多示例**见 `skills/seedance-storyboard/README.md`
+**工作流程：**
 
-## 📁 文件结构
+1. 首次使用引导配置 API 服务商和 Key（保存本地，后续免填）
+2. 描述图像内容 + 选择风格类别
+3. 设置质量、比例、风格、保存路径
+4. Claude 自动构建专业英文提示词并确认
+5. 调用 API 生成图像，保存到指定路径
+
+**支持的服务商：**
+
+| 服务商 | 推荐理由 |
+|--------|---------|
+| **BEIMA AI**（默认） | 国内可用，gpt-image-2，无需科学上网 |
+| OpenAI 官方 | 官方渠道，gpt-image-1 |
+| 任意 OpenAI-compatible 端点 | 自定义 base_url，兼容各类代理 |
+
+**支持的图像类别：**
+
+人物/肖像 · 海报/设计 · 产品渲染 · 风景/环境 · 动漫/插画 · 摄影风格 · UI/界面 · 技术图表
+
+**示例：**
+
+```
+你的需求：生成一张赛博朋克风格的城市夜景，用于壁纸
+
+ima2gen 构建的提示词：
+Neon-soaked rain-drenched cyberpunk cityscape at night, towering skyscrapers
+with holographic advertisements in Chinese and Japanese, flying vehicles leaving
+light trails, street level crowded with umbrella-carrying pedestrians, reflective
+wet asphalt, electric blue and magenta color palette, cinematic ultra-wide angle,
+hyperdetailed photorealistic, 8K resolution
+
+→ 自动调用 API，图片保存到你指定的路径
+```
+
+---
+
+## 📁 仓库结构
 
 ```
 Ericoding-skills/
 ├── .claude-plugin/
-│   └── marketplace.json              # Marketplace 配置
-├── README.md                         # 本文件
+│   └── marketplace.json                  # Marketplace 配置（skills 注册表）
+├── CLAUDE.md                             # Claude Code 开发指南
+├── README.md                             # 本文件
 └── skills/
-    └── seedance-storyboard/          # 主 Skill 目录
-        ├── SKILL.md                  # Skill 核心逻辑（v1.2.0 大幅增强）
-        ├── README.md                 # Skill 详细说明
-        ├── quick-reference.md        # 快速参考卡片（v1.2.0 新增高阶技法）
-        ├── templates/
-        │   └── storyboard-template.md    # 10套分镜模板（v1.2.0 新增4套）
-        └── examples/
-            └── example-prompts.md        # 16个完整示例（v1.2.0 新增6个）
+    ├── seedance-storyboard/              # Seedance 分镜提示词 skill
+    │   ├── SKILL.md
+    │   ├── README.md
+    │   ├── quick-reference.md
+    │   ├── templates/
+    │   └── examples/
+    └── ima2gen/                          # AI 图像生成 skill
+        ├── SKILL.md
+        ├── README.md
+        ├── cli/
+        │   ├── ima2gen.py                # Python CLI（API 调用）
+        │   └── requirements.txt
+        └── templates/                    # 8 类风格提示词模板
+            ├── portrait.md / poster.md / product.md / landscape.md
+            └── anime.md / photography.md / ui.md / technical.md
 ```
 
-## 🎬 Seedance 2.0 核心能力
+---
 
-### 📊 技术参数
+## 贡献
 
-| 输入类型 | 支持格式 | 数量限制 | 大小限制 |
-|---------|---------|---------|---------|
-| **图片** | jpeg, png, webp, bmp, tiff, gif | ≤ 9 张 | < 30 MB |
-| **视频** | mp4, mov (2-15s) | ≤ 3 个 | < 50 MB |
-| **音频** | mp3, wav (≤15s) | ≤ 3 个 | < 15 MB |
-| **文本** | 自然语言描述 | - | - |
-| **混合上限** | **12 个文件** | | |
+欢迎提交 Issue 和 PR。如果你有好的 Skill 想法，也欢迎讨论。
 
-> 💡 提示：视频参考会消耗更多生成额度，建议优先上传对画面影响最大的素材
-
-### 🎯 核心功能
-
-| 功能 | 说明 |
-|------|------|
-| **多模态输入** | 图片、视频、音频、文本自由组合创作 |
-| **参考图像** | 精准还原画面构图、角色细节、服装样式 |
-| **参考视频** | 支持镜头语言、复杂动作节奏、创意特效复刻 |
-| **视频延长** | 平滑延长与衔接，可"接着拍" |
-| **视频编辑** | 角色更替、剧情颠覆、片段调整、场景融合 |
-| **基础增强** | 物理规律更合理、动作更自然、指令理解更精准 |
-
-## 📝 提示词语法
-
-### 基础语法
-使用 `@素材名` 引用多模态素材：
-
-```
-@图片1 作为首帧
-@图片2 作为角色形象参考
-@视频1 参考运镜方式
-@音频1 用于配乐
-```
-
-### 高级用法
-
-| 场景 | 语法示例 |
-|------|---------|
-| **首帧 + 视频动作** | `@图片1 为首帧，参考@视频1 的打斗动作` |
-| **视频延长** | `将@视频1 延长 5s`（生成长度选"新增部分"时长） |
-| **角色替换** | `将@视频1 中的女生换成@图片1 的形象` |
-| **完整运镜复刻** | `完全参考@视频1 的所有运镜效果和表情` |
-| **多视频融合** | `在@视频1 和@视频2 之间加场景，内容为 xxx` |
-| **参考视频声音** | `使用@视频1 的背景音乐和节奏` |
-
-## 🔗 即梦平台信息
-
-- **官网**：https://jimeng.jianying.com
-- **入口**：Seedance 2.0 - 全能参考 / 首尾帧
-
-### ⚠️ 重要限制
-
-- **暂不支持写实真人脸部素材**（图片和视频均会被系统自动拦截）
-- **视频参考会消耗更多生成额度**
-- **视频像素范围**：640×640 (480p) 至 834×1112 (720p)
-- **混合输入总上限**：12 个文件
-
-### 💡 使用建议
-
-1. 优先上传对画面或节奏影响最大的素材
-2. 多模态素材多时，务必检查 @对象标注是否清楚
-3. 视频延长功能：选择的生成长度应为"新增部分"的时长
-4. 复杂运镜可用"完全参考@视频1的所有运镜效果"确保精准复刻
-
-## 🤝 贡献
-
-欢迎提交 Issue 和 PR！
-
-### 致谢
-
-- 基础版本 fork 自 [elementsix/elementsix-skills](https://github.com/elementsix/elementsix-skills) v1.1.0
-- 实测案例来源：字节跳动《小云雀 x Seedance2.0 实测案例》官方达人手册
-
-## 📄 许可证
+## 许可证
 
 MIT License
 

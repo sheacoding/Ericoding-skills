@@ -1,7 +1,7 @@
 {
   "name": "ericoding-skills",
   "description": "Ericoding 的 Claude Code Skills 合集 - 深度强化版",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "owner": {
     "name": "sheacoding",
     "email": "sheacoding@gmail.com"
@@ -15,6 +15,16 @@
       "strict": false,
       "skills": [
         "./skills/seedance-storyboard"
+      ]
+    },
+    {
+      "name": "ima2gen",
+      "description": "AI 图像生成 Skill - 智能提示词构建 + OpenAI-compatible API 调用（支持 BEIMA AI / OpenAI 官方 / 第三方代理）",
+      "version": "1.0.0",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/ima2gen"
       ]
     }
   ]
